@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "hello-world"
+		},
+		{
+			"path": "leap"
+		},
+		{
+			"path": "raindrops"
+		},
+		{
+			"path": "nth-prime"
+		},
+		{
+			"path": "beer-song"
+		}
+	],
+	"settings": {}
+}
