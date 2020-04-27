@@ -17,6 +17,9 @@
 		},
 		{
 			"path": "beer-song"
+		},
+		{
+			"path": "proverb"
 		}
 	],
 	"settings": {}
