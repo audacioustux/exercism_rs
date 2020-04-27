@@ -27,17 +27,15 @@ pub fn verse(n: u32) -> String {
 
     let wall = |x: Option<u32>| format!("{} of beer on the wall", bottles(x.unwrap_or(99)));
     let beer = format!("{} of beer", bottles(n));
-    let action = {
-        match n {
-            0 => "Go to the store and buy some more",
-            1 => "Take it down and pass it around",
-            _ => "Take one down and pass it around",
-        }
+    let action = match n {
+        0 => "Go to the store and buy some more",
+        1 => "Take it down and pass it around",
+        _ => "Take one down and pass it around",
     };
 
     format!(
         "{}, {}.\n{}, {}.\n",
-        wall(Some(n)),
+        wall(Some(n)).first_char_to_uppercase(),
         beer,
         action,
         wall(n.checked_sub(1))
@@ -51,4 +49,18 @@ pub fn sing(start: u32, end: u32) -> String {
         song = format!("{}\n{}", song, verse(i));
     }
     song
+}
+
+trait StrUtils {
+    fn first_char_to_uppercase(self) -> String;
+}
+
+impl StrUtils for String {
+    fn first_char_to_uppercase(self) -> String {
+        let mut c = self.chars();
+        match c.next() {
+            None => self,
+            Some(f) => f.to_uppercase().collect::<String>() + c.as_str(),
+        }
+    }
 }
