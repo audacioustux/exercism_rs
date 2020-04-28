@@ -20,6 +20,15 @@
 		},
 		{
 			"path": "proverb"
+		},
+		{
+			"path": "difference-of-squares"
+		},
+		{
+			"path": "sum-of-multiples"
+		},
+		{
+			"path": "grains"
 		}
 	],
 	"settings": {}
