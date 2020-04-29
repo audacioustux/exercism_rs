@@ -29,6 +29,15 @@
 		},
 		{
 			"path": "grains"
+		},
+		{
+			"path": "prime-factors"
+		},
+		{
+			"path": "armstrong-numbers"
+		},
+		{
+			"path": "reverse-string"
 		}
 	],
 	"settings": {}
