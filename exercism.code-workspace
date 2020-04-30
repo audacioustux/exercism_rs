@@ -38,6 +38,15 @@
 		},
 		{
 			"path": "reverse-string"
+		},
+		{
+			"path": "gigasecond"
+		},
+		{
+			"path": "high-scores"
+		},
+		{
+			"path": "bob"
 		}
 	],
 	"settings": {}
