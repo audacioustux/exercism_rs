@@ -47,6 +47,15 @@
 		},
 		{
 			"path": "bob"
+		},
+		{
+			"path": "matching-brackets"
+		},
+		{
+			"path": "clock"
+		},
+		{
+			"path": "dot-dsl"
 		}
 	],
 	"settings": {}
